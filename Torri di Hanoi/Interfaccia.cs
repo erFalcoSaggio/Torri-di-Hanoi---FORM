@@ -95,12 +95,12 @@ namespace Torri_di_Hanoi
                 return;
             }
 
-            await Task.Delay(0);
+            await Task.Delay(1000);
             await Hanoi(n - 1, da, aux, a);
             mosse++;
             AggiornaMosse();
 
-            await Task.Delay(0);
+            await Task.Delay(1000);
             SpostaDisco(da, a);
 
             await Hanoi(n - 1, aux, a, da);

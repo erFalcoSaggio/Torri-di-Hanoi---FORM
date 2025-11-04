@@ -39,6 +39,8 @@
             lbl_C = new Label();
             lbl_DischiTitolo = new Label();
             lbl_DischiNumero = new Label();
+            lbl_MosseTitolo = new Label();
+            lbl_MosseNumero = new Label();
             SuspendLayout();
             // 
             // pnl_A_1
@@ -133,15 +135,35 @@
             lbl_DischiNumero.AutoSize = true;
             lbl_DischiNumero.Location = new Point(118, 20);
             lbl_DischiNumero.Name = "lbl_DischiNumero";
-            lbl_DischiNumero.Size = new Size(25, 15);
+            lbl_DischiNumero.Size = new Size(22, 15);
             lbl_DischiNumero.TabIndex = 10;
             lbl_DischiNumero.Text = "xxx";
+            // 
+            // lbl_MosseTitolo
+            // 
+            lbl_MosseTitolo.AutoSize = true;
+            lbl_MosseTitolo.Location = new Point(187, 20);
+            lbl_MosseTitolo.Name = "lbl_MosseTitolo";
+            lbl_MosseTitolo.Size = new Size(104, 15);
+            lbl_MosseTitolo.TabIndex = 11;
+            lbl_MosseTitolo.Text = "Numero di mosse:";
+            // 
+            // lbl_MosseNumero
+            // 
+            lbl_MosseNumero.AutoSize = true;
+            lbl_MosseNumero.Location = new Point(297, 20);
+            lbl_MosseNumero.Name = "lbl_MosseNumero";
+            lbl_MosseNumero.Size = new Size(17, 15);
+            lbl_MosseNumero.TabIndex = 12;
+            lbl_MosseNumero.Text = "xx";
             // 
             // Interfaccia
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lbl_MosseNumero);
+            Controls.Add(lbl_MosseTitolo);
             Controls.Add(lbl_DischiNumero);
             Controls.Add(lbl_DischiTitolo);
             Controls.Add(lbl_C);
@@ -174,5 +196,7 @@
         private Label lbl_DischiTitolo;
         private Label lbl_DischiNumero;
         private Panel panel1;
+        private Label lbl_MosseTitolo;
+        private Label lbl_MosseNumero;
     }
 }
